@@ -1,15 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 :root {
   --primary: #ffffff;
   --secondary: #212429;
 }
 
-
-.montserrat-navbar {
+body {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 16px 32px;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
+h2 {
+  font-size: 32px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
 
+.navbar {
+  display: flex;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.container {  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.box .details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  max-width: 70%;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.price {
+  font-size: 14px;
+  font-weight: bold;
+}
 
